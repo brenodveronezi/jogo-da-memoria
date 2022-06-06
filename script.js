@@ -58,6 +58,27 @@ function resetBoard() {
     })
 })();
 
+
+function cards16(){
+    cards.forEach((card) => {
+        card.removeAttribute('hidden');
+    })
+
+    changeStyle();
+}
+
+function changeStyle(){
+    const body = document.body;
+    body.classList.remove('memory-game');
+    body.classList.add('memory-game16')
+
+    cards.forEach((card) => {
+        card.style.height = "calc(22% - 10px)";
+        card.style.width = "width: calc(16% - 10px)";
+    })
+}
+
 cards.forEach((card) => {
     card.addEventListener('click', flipCard);
 })
+

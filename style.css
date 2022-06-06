@@ -12,7 +12,16 @@ body {
 
 .memory-game {
     height: 640px;
-    width: 640px;
+    width:  640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-game16 {
+    height: 860px;
+    width:  1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +52,7 @@ body {
     position: absolute;
     border-radius: 5px;
     background: #ffffff;
-    backface-visibility: hidden; /* uma propriedade que retira o verso do elemento */
+    backface-visibility: hidden; /* uma propriedade que retira o verso do elementos*/
 }
 
 .card-front {
